@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Import Fontawsome
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+// Set your brand colors
+$family-sans-serif: 'Roboto', sans-serif;
+$purple: #c9168d;
+$pink: #fa7c91;
+$beige-lighter: rgb(245,245,245);
+$dark: #333;
+
+// Update Bulma's global variables
+$primary: $purple;
+$link: $dark;
+$danger: $pink;
+
+
+// Update some of Bulma's component variables
+$body-background-color: $beige-lighter;
+
+
+
+@import '../../node_modules/bulma/bulma.sass';
+
+
+
+.login-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .login-box{
+        width: 350px;
+        padding: 1.5rem 1.5rem 2rem 1.5rem;
+    }
+}
